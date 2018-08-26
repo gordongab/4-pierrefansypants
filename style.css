@@ -1,0 +1,98 @@
+
+    
+    body {
+  height: 98vh;
+  background-color: #464646;
+  }
+
+.p {
+    font-family: 'EB Garamond', serif;
+}
+
+
+#pierre {
+    font-family: 'Oswald', serif;
+    color: lightgray;
+    font-size: 24px;
+}
+
+#fansy {
+    font-family: 'Sonsie One', cursive;
+    color: lightgray;
+    font-size: 24px;
+}
+
+
+main {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 100px 40px 150px 40px 150px 40px 150px 40px 150px 40px 150px 40px 150px 40px 150px 40px 150px;
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+}
+
+.box {
+  display: grid;
+  height: 100%;
+  background-color:white;
+  justify-content:left;
+  padding-left: 10px;
+  align-items: center;
+  grid-row: span 1;
+  grid-column: span 1;
+  font-family: 'EB Garamond', serif;
+
+}
+
+.one {
+    background-color: #464646;
+    }
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+    main {
+        display: grid;
+        height: 100%;
+        grid-template-rows: 200px 30px 70px 30px 70px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+        background-color: #464646;
+    }
+
+    #pierre {
+        font-family: 'Oswald', serif;
+        color: lightgray;
+        font-size: 24px;
+        position: left;
+    }
+
+    .responsive {
+        padding-top: 500px;
+        padding-left: 150px;
+        
+    }
+
+
+    .box {
+        display: grid;
+        height: 100%;
+       
+        justify-content:center;
+        align-items: center;
+        grid-row: span 1;
+        grid-column: span 1;
+      
+      }
+
+
+
+
+}
